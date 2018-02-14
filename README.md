@@ -5,4 +5,4 @@ This project is made specifically with bootstrap to enhance our front end design
 The code is responsive with comments throughout the css and each html page.
 
 
-![alt text](images/homepic.png)
+![alt text](assets/images/homepic.png)
