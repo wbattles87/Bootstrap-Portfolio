@@ -4,84 +4,101 @@
 	<meta charset = "UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
   	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-  	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="assets/CSS/style.css" media="screen">
 
 </head>
 <body>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-
-
-
+	<img src="assets/images/background.jpg" id="bg" alt="">
+	<!-- Nav Bar (same as index page) -->
 	<nav class="navbar navbar-default">
-
-    	<div class="navbar-header">
-        	<button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
-            	<span class="sr-only">Toggle navigation</span>
-            	<span class="icon-bar"></span>
-            	<span class="icon-bar"></span>
-            	<span class="icon-bar"></span>
-        	</button>
-        	<a href="#" class="navbar-brand"> Will Battles</a>
-    	</div>
-
-
-    	<div id="navbarCollapse" class="collapse navbar-collapse">
-        	<ul class="nav navbar-nav navbar-right">
-            	<li class="active"><a href="index.html"> About Me </a></li>
-            	<li><a href="portfolio.html"> Portfolio </a></li>
-            	<li><a href="contact.html"> Contact </a></li>
-        	</ul>
-    	</div>
-	</nav>
-
-<div class ="row">
-	<section class="main-section col-xs-12 col-sm-12 col-md-7">
-		<h1>Contact</h1>
-
-
-		<form id="contact-form">
-		<ul>
-  			<li>
-    		<label for="name">Name</label>
-    		<input type="text" id="name col-lg-12 col-md-12 col-sm-12 col-xs-12" name="name" placeholder="John Smith" required="required">
-  			</li>
-  		
-  		<li>
-    		<label for="email">Email</label>
-    		<input type="email" id="email" name="email" placeholder="example@gmail.com" required="required">
-  		</li>
-  		
-  		<li>
-    		<label for="message">Message</label>
-    		<textarea id="message" name="message" required="required"></textarea>
-  		</li>
-		</ul>
-		<input type="submit">
-		</form>
-	</section>
-
-	<section class="sidebar col-xs-12 col-sm-12 col-md-5">
-		<div id="connect">
-			<h2>Connect with Me</h2>
-				<a href="https://github.com"><img src="images/github.png" class="social col-xs-4 col-sm-3 col-md-4" alt="GitHub" /></a>
-				<a href="https://linkedin.com"><img src="images/linkedin.png" class="social col-xs-4 col-sm-3 col-md-4" alt="LinkedIn" /></a>
-				<a href="https://stackedoverflow.com"><img src="images/stackoverflow.png" class="social col-xs-4 col-sm-3 col-md-4" alt="Stack Overflow" /></a>
+		<div class="container-fluid navbar-custom">
+			<div class="row">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+					 aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<div class="col-xs-12 phone-nav">
+						<a class="navbar-brand" href="#" id="logo">Your Name</a>
+					</div>
+				</div>
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav navbar-right navbar-right-custom">
+						<li>
+							<a href="contact.html">Contact</a>
+						</li>
+						<li>
+							<a href="portfolio.html">Portfolio</a>
+						</li>
+						<li>
+							<a href="index.html">About</a>
+						</li>
+					</ul>
+				</div>
+			</div>
 		</div>
-	</section>
-
-</div>
-
-	<div class="row2">
-		<div class="footer col-xs-12">		
-			Copyright &copy; 2017 Will Battles
+	</nav>
+	<!-- End of navbar -->
+	
+	<!-- Start of content wrap -->
+	<div class="wrap">
+		<div class="container">
+			<section class="row">
+				<div class="col-md-8">
+					<form class="contact-form">
+						<h1 class="contact-form-header">Contact</h1>
+						<hr class="contact-hr" />
+						<div class="form-group">
+							<label class="label-name" for="name">Name</label>
+							<input type="text" id="name_input" name="user_name" />
+						</div>
+						<div class="form-group">
+							<label class="label-mail" for="mail">E-mail</label>
+							<input type="email" id="mail_input" name="user_mail" />
+						</div>
+						<div class="form-group">
+							<label class="label-msg" for="msg">Message</label>
+							<br />
+							<textarea id="msg" name="user_message_input" cols=600></textarea>
+						</div>
+						<button class="submit-btn">Submit</button>
+					</form>
+				</div>
+				<div class="col-md-4">
+	
+					<!-- Start of Connect With Me Area -->
+					<section id="connect-with-me-area">
+						<div class="connect-with-me-content">
+							<h1 class="connect-with-me-header">Connect With Me</h1>
+							<hr />
+							<div id="images">
+								<img src="assets/images/github.png" alt="" class="connect-with-me-photo">
+								<img src="assets/images/linkedin.png" alt="" class="connect-with-me-photo">
+								<img src="assets/images/stackoverflow.png" alt="" class="connect-with-me-photo">
+							</div>
+						</div>
+					</section>
+					
+				</div>
+			</section>
 		</div>
 	</div>
+	
+	<!-- Footer Section -->
+	<footer class="footer">
+		<div class="two-toned-footer-color"></div>
+		<p class="text-muted text-muted-footer text-center">
+			&copy; Copyright 2017 Will Battles
+		</p>
+	</footer>
 
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+	 crossorigin="anonymous"></script>
 
 </body>
 </html>
